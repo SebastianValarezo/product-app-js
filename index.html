@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product App</title>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/litera/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVIGATOR -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand">Product App</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- APPLICATION -->
+      <div class="row pt-5" id="app">
+        <hr />
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>Agregar producto</h4>
+            </div>
+            <form id="product-form" class="card-body">
+              <input
+                type="text"
+                id="name"
+                placeholder="Nombre del Producto"
+                class="form-control"
+              />
+
+              <input
+                type="number"
+                id="price"
+                step="0.01"
+                class="form-control mb-3 mt-3"
+                placeholder="Precio del Producto"
+              />
+
+              <input
+                type="number"
+                id="year"
+                min="2000"
+                value="2018"
+                max="2022"
+                class="form-control"
+                placeholder="Año del Producto"
+              />
+
+              <input
+                type="submit"
+                value="Guardar"
+                class="btn btn-primary mt-3"
+              />
+            </form>
+          </div>
+        </div>
+        <div id="product-list" class="col-md-8">
+          <h3>Listado de Productos</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script Javascripts -->
+    <script src="App.js"></script>
+  </body>
+</html>
